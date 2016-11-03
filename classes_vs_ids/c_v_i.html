@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="utf-8">
+		<title>Do we really need one though</title>
+		<style>
+			body{
+				font-family: sans-serif;
+			}
+
+			#this-element{
+				color:blue;
+				font-size: 1.5em;
+			}
+			.that-element{
+				color:green;
+				font-size: 1.5em;
+			}
+		</style>
+	</head>
+	<body>
+		<h1>Let's mess around with classes and id's</h1>
+
+		<p id="this-element">This content</p>
+		<p class="that-element">More Content</p>
+
+		<ul>
+			<li>Testing, Testing</li>
+			<li>1</li>
+			<li>2</li>
+			<li>3...</li>
+		</ul>
+		<script>
+			var thisElement = document.getElementById("this-element");
+			console.log(thisElement);
+
+			var thatElement = document.getElementsByClassName("thatElement");
+			console.log(thatElement);
+		</script>
+	</body>
+</html>

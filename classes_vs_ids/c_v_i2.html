@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="utf-8">
+		<title>A title</title>
+		<style>
+			.a-button{
+				font-size:2em;
+				background-color:Plum;
+				color:white;
+			}
+		</style>
+	</head>
+	<body>
+		<h1>More stuff on Id's and Classes</h1>
+
+		<button class="a-button">A Button</button>
+
+		<script>
+			var aButton = document.getElementsByClassName("a-button");
+			console.log(aButton);
+
+			function add_alert(){
+				for(i in aButton){
+					aButton[i].onclick = function(){
+						alert("An alert Pops up!!!")
+					}
+				}
+			}
+
+			add_alert();
+		</script>
+	</body>
+</html>
