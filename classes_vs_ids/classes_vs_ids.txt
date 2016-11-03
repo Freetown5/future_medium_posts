@@ -1,6 +1,18 @@
 Weird Javascripty things: The case for ID's(title)
 
-So a few weeks ago, I was on the front-end channel of one of D.C.'s many active slack tech accounts and someone asked a question about CSS. Though I'm not completely clear on what the issue was, she seemed to be trying to overide a nested class with another class she had created for specific use in certain events. Eventually, it was suggested that she use an id followed by "!important" next to the value if the ID by itself didn't work. While some commenters agreed with the solution, others thought that it was bad practice to use either of the solutions since ID's themselves had largely fallen out of favor within the CSS community due to their high specificity and inability to be reused (in reality, you actually can use ID's repeatedly for styling without any immediate repurcussions, but it's greatly discouraged). This was where I had to start questioning the general consensus, especially when it came to the posters specific issue. Although, like many, I had heard this same advice over and over when it came to styling elements and structuring code, I quickly realized when I began using vanilla javascript, that it was a little more complicated than that. 
+So a few weeks ago, I was on the front-end channel of one of D.C.'s many active 
+slack tech accounts and someone asked a question about CSS. Though I'm not completely 
+clear on what the issue was, she seemed to be trying to overide a nested class with another 
+class she had created for specific use in certain events. Eventually, it was suggested 
+that she use an id followed by "!important" next to the value if the ID by itself didn't work. 
+While some commenters agreed with the solution, others thought that it was bad practice to use 
+either of the solutions since ID's themselves had largely fallen out of favor within the CSS 
+community due to their high specificity and inability to be reused (in reality, you actually can 
+use ID's repeatedly for styling without any immediate repurcussions, but it's greatly discouraged). 
+This was where I had to start questioning the general consensus, especially when it came to 
+the posters specific issue. Although, like many, I had heard this same advice over and over when 
+it came to styling elements and structuring code, I quickly realized when I began using vanilla 
+javascript, that it was a little more complicated than that. 
 
 When it comes to javascript, you can't use ID's and classes interchangibly, the way you can in CSS because they behave differently. They behave differently because elements are stored in different ways. Generally speaking, ID's are stored as independent variables and classes are stored as objects. This is true even if a class is only used once and can be seen by logging an ID or a class to the console after creating it. 
 
