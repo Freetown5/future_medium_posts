@@ -1,0 +1,14 @@
+#Structuring CSS: Staying out of Developers Debt by Utilizing Multiple Code Structuring Methodologies
+
+## Reasons
+
+So. Ever since I started restructuring the front-end code to a major project at my old company a couple months ago, I've been dying to write a post about, guess what, structuring code. Why, you might ask, do I want to write about that? Alright, lets start from the beginning. About 10 months ago, after spending roughly 6 months knee deep in the front-end code for my then company's main product, the CTO/Lead-developer (this was a start-up so we all wore multiple hats) decided to put me in charge of the front-end development for the new hybrid mobile app we were building. 
+
+At the time, although I was comfortable with altering and adding code to existing front-end environments and putting together the code for much smaller side projects, I had never put together a development environment for a larger enterprise app before, especially not one that was going to be used or worked on by several different people. Because of this, my focus was on getting the environment up and running, in any compacity and making sure the app was functional and matched the look the designers were going for based on their mockups. I wasn't really concerned with whether or not the code was structured properly or legible...until about 6 months later when the company finished up another one of their short-term projects and hired a new developer. The project was now going to be worked on by three people instead of one and the code environment was a mess. 
+
+<!-- How much of mess you might ask? Well, because I was having issues with my sass file loading (it was an npm issue, of course) and didn't set aside enough time in the beginning to troubleshoot the issue, I ended up just writing everything directly in the css file in regular css. I had no strategy for naming things so I just used whatever random name popped up in my head while I was building each feature. There were also other issues that popped up, which I would have been able to prevent had I had a firmer grasp of more extensive css, that I ended up solving by engaging in poor --> 
+
+How much of a mess you might ask? Well, because of an issue with npm, roughly 3/4 of the styling was written in plain css in the actual css file instead of the sass file. Because no naming structure was discussed, all of the classes used were named randomly making it a pain to figure out what each class was actually styling. There were id's used everywhere both as javascript anchors and as a means of overriding existing classes, definitely not best practice and that was just the css. The javascript/angular 1 environment was mess too. 
+
+Eventhough I was aware that writing the code this way would eventually become a problem, I did it anyway for the sake of expediency. I was more concerned about getting features done in a timely manner than of making sure they were done in a way t
+
