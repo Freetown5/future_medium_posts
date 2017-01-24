@@ -12,4 +12,5 @@ This Repository was created for the purpose of storing all content that is relat
 ##Possible Future Topics:##
 * Perfectly structured CSS: Combining preprocessors, naming methodologies and existing CSS frameworks
 * Choosing a language: Reasoning behind choosing certain languages 
-
+* Frameworks: Reinventing the wheel (What all the popular ones call major concepts)
+* Languages: 20 diffrent ways to define the same thing
